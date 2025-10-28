@@ -1,1 +1,12 @@
 /env
+__pycache__/
+/vs_code/
+*.pyc
+.DS_Store
+.ipynb_checkpoints
+.vscode/
+.idea/
+*.log
+*.sqlite3
+*.db
+*.env
