@@ -6,8 +6,7 @@ For detailed model evaluation and analysis see: **[Analysis](https://github.com/
 
 **Demos:**
 
-<img width="691" height="330" alt="Screenshot 2025-10-28 163527" src="https://github.com/user-attachments/assets/71eab422-307c-4f35-bce8-ef1c0437a1c9" />
-<img width="609" height="397" alt="Screenshot 2025-10-28 163535" src="https://github.com/user-attachments/assets/aa4cc4d3-faef-4086-843f-4506bdd4ab75" />
+<img width="691" height="330" alt="Screenshot 2025-10-28 163527" src="https://github.com/user-attachments/assets/71eab422-307c-4f35-bce8-ef1c0437a1c9" /> <img width="609" height="397" alt="Screenshot 2025-10-28 163535" src="https://github.com/user-attachments/assets/aa4cc4d3-faef-4086-843f-4506bdd4ab75" />
 
 
 
