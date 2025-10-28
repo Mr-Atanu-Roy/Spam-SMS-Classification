@@ -58,13 +58,25 @@ Install dependencies
 
 ```
 
+Download the nltk data (required)
+
+```bash
+  python
+  import nltk
+  nltk.download('punkt_tab')
+  nltk.download('punkt')
+  nltk.download('stopwords')
+  exit()
+
+```
+
 To run the web app locally, run the following command
 
 ```bash
   streamlit run .\app\app.py
 
 ```
-You will be automatically redireced to the web app running in your local server
+After this you will be automatically redireced to the web app running in your local server
 
 ## About the Model:
 After various analysis and evaluation of different algo, metrices, parameter and hyperparameters I have used the following for the best output, which is also for the web app:
