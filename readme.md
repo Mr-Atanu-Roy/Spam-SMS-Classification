@@ -1,6 +1,12 @@
 # **SPAM SMS CLASSIFICATION**
 
-This project focuses on building a machine learning model to classify SMS messages as either "ham" (legitimate) or "spam".
+It is a ML project made for **classification of messages(SPAM/HAM).**
+Also the model can be directly accesed using a web app build using **Streamlit**.
+For detailed model evaluation and analysis see: **[Analysis](https://github.com/Mr-Atanu-Roy/Spam-SMS-Classification/blob/master/analysis.md)**
+
+**Demos:**
+
+
 
 **Tech Stack:**
 
@@ -11,24 +17,23 @@ This project focuses on building a machine learning model to classify SMS messag
 -   **NLTK:** Used for natural language processing tasks like tokenization, stop word removal, and stemming.
 -   **Scikit-learn:** Used for machine learning model building, including text vectorization (CountVectorizer, TfidfVectorizer), model training (Naive Bayes classifiers), and evaluation metrics.
 -   **WordCloud:** Used to generate word clouds for visualizing frequent words.
+-   **Streamlit:** Used for making the web app.
 
 **Dataset Used:**
-https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
+I have used [SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) downloaded from Kaggle.
 It contains one set of SMS messages in English of 5,574 messages, tagged acording being ham (legitimate) or spam.
 
-## Installation
+## Project setup
 
-Create a folder and open terminal and install this project by
-command
-
+Clone the project
 ```bash
-git clone https://github.com/Mr-Atanu-Roy/BlogZilla-Backend
+git clone https://github.com/Mr-Atanu-Roy/Spam-SMS-Classification
 
 ```
 
 or simply download this project from https://github.com/Mr-Atanu-Roy/BlogZilla-Backend
 
-In project directory Create a virtual environment of any name(say env)
+In project directory Create a virtual environment (env)
 
 ```bash
   virtualenv env
@@ -51,33 +56,28 @@ Install dependencies
 
 ```
 
-Run migration commands
+To run the web app locally, run the following command
 
 ```bash
-  py manage.py makemigrations
-  py manage.py migrate
+  streamlit run .\app\app.py
 
 ```
+You will be automatically redireced to the web app running in your local server
 
-Create a super user
+## About the Model:
+After various analysis and evaluation of different algo, metrices, parameter and hyperparameters I have used the following for the best output, which is also for the web app:
 
-```bash
-  py manage.py createsuperuser
+- TfidfVectorizer is used with max_features hyperparamer as 3000 for vectorizing the text data.
+- Multinomial Naive Bayes Algo is used for classification.
+- Achived accuracy: 97.68% and precision: 99.19%
 
-```
+For detailed model evaluation and analysis see: **[Analysis](https://github.com/Mr-Atanu-Roy/Spam-SMS-Classification/blob/master/analysis.md)**
 
-Then add some data into database
 
-To run the project in your localserver
+## Other Notes
+- I have trained the model in the **SMS_detection.ipynb** file in google colab.
+- To experiment or run the file upload the file and **spam.csv** dataset(from dataset folder to google colab). Or you can use jupyter note book.
 
-```bash
-  py manage.py runserver
-
-```
-
-Now the application is available at: http://127.0.0.1:8000/
-
-To allow request from any end point add the origin to `CORS_ORIGIN_WHITELIST` in settings.py
 
 ## Author
 
