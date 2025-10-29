@@ -58,18 +58,6 @@ Install dependencies
 
 ```
 
-Download the nltk data (required)
-
-```bash
-  python
-  import nltk
-  nltk.download('punkt_tab')
-  nltk.download('punkt')
-  nltk.download('stopwords')
-  exit()
-
-```
-
 To run the web app locally, run the following command
 
 ```bash
