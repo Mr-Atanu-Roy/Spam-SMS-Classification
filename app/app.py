@@ -91,8 +91,8 @@ st.markdown("""
 
 
 # --- Main Application UI ---
-st.title("SMS Spam Detector")
-st.write("Enter a message to check if it's spam or legitimate.")
+st.title("Spam SMS Detector")
+st.write("Enter a text sms message to check if it's spam or legitimate.")
 
 # --- Input Section ---
 message_input = st.text_area(
